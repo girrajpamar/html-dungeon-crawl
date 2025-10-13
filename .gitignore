@@ -1,0 +1,29 @@
+# --- Operating System files ---
+.DS_Store
+Thumbs.db
+
+# --- Editor / IDE directories ---
+.vscode/
+.idea/
+*.swp
+
+# --- Logs and temporary files ---
+*.log
+npm-debug.log*
+*.tmp
+*.cache
+
+# --- Build or distribution directories ---
+dist/
+build/
+out/
+tmp/
+
+# --- Node modules (for future tooling) ---
+node_modules/
+package-lock.json
+yarn.lock
+
+# --- Miscellaneous ---
+*.bak
+*.old
