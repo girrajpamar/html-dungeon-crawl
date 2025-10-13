@@ -3,7 +3,17 @@
 A procedural HTML5 roguelite dungeon crawler featuring potions, fog of war, and turn-based combat.  
 Built entirely with vanilla JavaScript, HTML5 Canvas, and CSS3 — no frameworks or external libraries required.
 
----
+<p align="center">
+  <img src="https://github.com/ericmaddox/html-dungeon-crawl/blob/main/media/html_dungeon_crawl_1.png?raw=true" 
+       alt="HTML Dungeon Crawl Screenshot" 
+       width="720" 
+       style="border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.3);" />
+</p>
+
+<p align="center">
+  <em>In a realm of ever-changing halls and forgotten tombs, the brave who descend must battle through darkness and scarcity. Conquer the depths of <strong>HTML Dungeon Crawl</strong>.</em>
+</p>
+
 
 ## Overview
 
