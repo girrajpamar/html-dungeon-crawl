@@ -67,6 +67,6 @@ This expanded version introduces a **potion system**, **enhanced HUD**, and **la
 Clone the repository and open `html_dungeon_crawl.html` directly in your browser:
 
 ```bash
-git clone https://github.com/<your-username>/html-dungeon-crawl.git
+git clone https://github.com/ericmaddox/html-dungeon-crawl.git
 cd html-dungeon-crawl
 open html_dungeon_crawl.html
