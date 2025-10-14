@@ -469,8 +469,11 @@ function openChestAt(x,y){
     const r = Math.random();
     if(r < 0.45){
       const heal = 4 + Math.floor(state.level/3);
-      state.player.hp += heal;
-      pushMessage(`+${heal} HP`);
+      const maxHP = PLAYER_BASE_HP + Math.floor((state.level-1)/2);
+      const oldHP = state.player.hp;
+      state.player.hp = Math.min(maxHP, state.player.hp + heal);
+      const actualHeal = state.player.hp - oldHP;
+      pushMessage(`+${actualHeal} HP`);
     } else if (r < 0.7){
       state.player.atk += 1;
       pushMessage("+1 ATK");
@@ -614,8 +617,18 @@ function usePotion(){
     return false;
   }
   state.inventory.potions = Math.max(0, state.inventory.potions - 1);
-  state.player.hp += POTION_HEAL;
-  pushMessage(`Healed ${POTION_HEAL} HP`);
+  
+  // Calculate maximum HP for current level
+  const maxHP = PLAYER_BASE_HP + Math.floor((state.level-1)/2);
+  const oldHP = state.player.hp;
+  state.player.hp = Math.min(maxHP, state.player.hp + POTION_HEAL);
+  const actualHeal = state.player.hp - oldHP;
+  
+  if(actualHeal > 0){
+    pushMessage(`Healed ${actualHeal} HP`);
+  } else {
+    pushMessage("Already at full health");
+  }
   updateHUD();
   return true;
 }
