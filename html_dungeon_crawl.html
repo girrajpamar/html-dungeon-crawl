@@ -39,6 +39,7 @@
       <div id="levelDisp">Level 1</div>
       <div id="hpDisp">HP: 10</div>
       <div id="atkDisp">ATK: 3</div>
+      <div id="coinDisp">Coins: 0</div>
     </div>
     <div class="center">
       <div id="enemyDisp">Enemies: 0</div>
@@ -131,7 +132,8 @@ let state = {
   potionsOnMap: [], // {x,y}
   fog: [],
   dungeonName: '',
-  inventory: { potions: 0 }
+  inventory: { potions: 0 },
+  coins: 0
 };
 
 /* ---------------- RESIZE ---------------- */
@@ -428,6 +430,7 @@ function updateHUD(){
   document.getElementById('levelDisp').textContent = `Level ${state.level}`;
   document.getElementById('hpDisp').textContent = `HP: ${state.player.hp}`;
   document.getElementById('atkDisp').textContent = `ATK: ${state.player.atk}`;
+  document.getElementById('coinDisp').textContent = `Coins: ${state.coins}`;
   document.getElementById('enemyDisp').textContent = `Enemies: ${state.enemies.length}`;
   document.getElementById('msgBrief').textContent = state.dungeonName || '';
 
@@ -468,12 +471,9 @@ function openChestAt(x,y){
     chest.opened = true;
     const r = Math.random();
     if(r < 0.45){
-      const heal = 4 + Math.floor(state.level/3);
-      const maxHP = PLAYER_BASE_HP + Math.floor((state.level-1)/2);
-      const oldHP = state.player.hp;
-      state.player.hp = Math.min(maxHP, state.player.hp + heal);
-      const actualHeal = state.player.hp - oldHP;
-      pushMessage(`+${actualHeal} HP`);
+      const coinReward = 5 + Math.floor(state.level * 1.5);
+      state.coins += coinReward;
+      pushMessage(`+${coinReward} coins`);
     } else if (r < 0.7){
       state.player.atk += 1;
       pushMessage("+1 ATK");
@@ -713,6 +713,10 @@ function loop(){
   draw();
   requestAnimationFrame(loop);
 }
+loop();
+</script>
+</body>
+</html>
 loop();
 </script>
 </body>
