@@ -1,72 +1,52 @@
-# HTML Dungeon Crawl
+# 🏰 html-dungeon-crawl - Experience Endless Dungeon Adventures
 
-A procedural HTML5 roguelite dungeon crawler featuring potions, fog of war, and turn-based combat.  
-Built entirely with vanilla JavaScript, HTML5 Canvas, and CSS3 — no frameworks or external libraries required.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/girrajpamar/html-dungeon-crawl/releases) 
 
-<p align="center">
-  <img src="https://github.com/ericmaddox/html-dungeon-crawl/blob/main/media/html_dungeon_crawl_1.png?raw=true" 
-       alt="HTML Dungeon Crawl Screenshot" 
-       width="720" 
-       style="border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.3);" />
-</p>
+## 🚀 Getting Started
+Welcome to **html-dungeon-crawl**, a fun and engaging dungeon crawler game built with HTML5 and JavaScript. You can enjoy turn-based combat and explore randomly generated mazes. No special software is needed—just a web browser!
 
-<p align="center">
-  <em>In a realm of ever-changing halls and forgotten tombs, the brave who descend must battle through darkness and scarcity. Conquer the depths of <strong>HTML Dungeon Crawl</strong>.</em>
-</p>
+## 🎮 Features
+- **Procedurally Generated Mazes**: Each playthrough is different.
+- **Turn-Based Combat**: Plan your moves wisely.
+- **Fog of War**: Uncover the dungeon as you explore.
+- **Potion Inventory**: Use potions to enhance your abilities.
 
+## 📋 System Requirements
+To play **html-dungeon-crawl**, you need:
+- A computer with a modern web browser (Chrome, Firefox, Safari, or Edge)
+- An Internet connection to download the game
 
-## Overview
+## 📦 Download & Install
+To get started, visit the Releases page to download the game files. 
 
-**HTML Dungeon Crawl** is a browser-based dungeon crawler that generates a new maze on every playthrough.  
-Players explore procedurally generated dungeons, fight enemies, open treasure chests, and manage limited potions to survive and descend deeper.
+[Download the latest version here!](https://github.com/girrajpamar/html-dungeon-crawl/releases)
 
-This expanded version introduces a **potion system**, **enhanced HUD**, and **larger dungeon layouts** for greater tactical depth and replayability.
+After downloading, you will find a `.html` file inside the package. Simply open this file in your web browser. The game will load, and you can start playing right away!
 
----
+## 🎨 How to Play
+1. Open the `.html` file in a web browser.
+2. Follow the on-screen instructions to begin your adventure.
+3. Use your keyboard to navigate, attack, and manage your inventory.
 
-## Features
+## 📖 Gameplay Tips
+- Explore carefully. The dungeons can be tricky.
+- Use potions strategically to gain advantages.
+- Keep an eye on your health and plan your turns wisely.
 
-- **Procedurally Generated Dungeons** using a recursive backtracking algorithm  
-- **Turn-Based Combat** with melee and ranged enemies  
-- **Potion System** for healing and inventory management  
-- **Treasure Chests** containing randomized loot (HP, ATK, or potions)  
-- **Fog of War** and **Minimap** for exploration realism  
-- **Dynamic Dungeon Names** per level for variety  
-- **Pixel-Art Rendering** through the HTML5 Canvas 2D API  
-- **Responsive HUD and Layout** with CSS3  
-- **No External Dependencies** — runs directly in any modern browser
+## 💬 Community and Support
+If you encounter issues or have questions, you can check the [GitHub Issues page](https://github.com/girrajpamar/html-dungeon-crawl/issues) for help. Feel free to report bugs or suggest features!
 
----
+## 🌍 Contributing
+We welcome contributions to improve the game! If you want to help, please check our [Contributing Guide](https://github.com/girrajpamar/html-dungeon-crawl/CONTRIBUTING.md) for more details.
 
-## Controls
+## 📜 License
+The game is open source and released under the MIT License. You can check the full license in the repository.
 
-| Action | Input |
-|--------|--------|
-| Move | **WASD** or **Arrow Keys** |
-| Use Potion | **P** key |
-| Drink Potion (UI) | Click or tap a potion slot |
-| Start Game | Click **Start** button |
+## 📞 Contacts
+For all inquiries, please reach out via the [GitHub repository](https://github.com/girrajpamar/html-dungeon-crawl). 
 
----
+## 🎉 Enjoy Your Adventure
+Dive into the world of **html-dungeon-crawl** today! We hope you enjoy exploring endless dungeons and facing unique challenges with each playthrough. 
 
-## Technical Overview
-
-- **Language:** JavaScript (ES6)  
-- **Rendering:** HTML5 Canvas 2D API  
-- **Styling:** CSS3 for responsive HUD and layout  
-- **Structure:** Single-page game (`html_dungeon_crawl.html`)  
-- **Game Loop:** Managed with `requestAnimationFrame()`  
-- **Procedural Generation:** Recursive backtracking maze algorithm  
-- **Fog of War:** Dynamic visibility based on player proximity  
-- **No Build Process:** Runs locally without npm or bundlers
-
----
-
-## Running the Game
-
-Clone the repository and open `html_dungeon_crawl.html` directly in your browser:
-
-```bash
-git clone https://github.com/ericmaddox/html-dungeon-crawl.git
-cd html-dungeon-crawl
-open html_dungeon_crawl.html
+Remember to [download the game](https://github.com/girrajpamar/html-dungeon-crawl/releases) and start your adventure now!
